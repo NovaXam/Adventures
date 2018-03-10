@@ -122,3 +122,37 @@ Winner get everything, loser will stuck in the game forever.
         - He want to have an access for the hints and instructions of the game at any time.
         - He want to be able to stop the game and resume.
         - He want to choose different topic of adventure.
+
+## Mockups
+
+   #### Front page
+![alt text] (https://github.com/NovaXam/Adventures/blob/master/Planning/Mockups/Front_page.JPG "Front page")
+   
+   #### Game page
+![alt text] (https://github.com/NovaXam/Adventures/blob/master/Planning/Mockups/Game_page.JPG "Game page")
+   
+   #### Dark magic
+![alt text] (https://github.com/NovaXam/Adventures/blob/master/Planning/Mockups/Dark_magic.JPG "Dark magic")
+
+   #### White magic
+![alt text] (https://github.com/NovaXam/Adventures/blob/master/Planning/Mockups/Bright_magic.JPG "White magic")
+
+   #### Menu slide
+![alt text] (https://github.com/NovaXam/Adventures/blob/master/Planning/Mockups/Menu_slide.JPG "Menu slide")
+
+   #### Start popup
+![alt text] (https://github.com/NovaXam/Adventures/blob/master/Planning/Mockups/Start_popup.JPG "Start popup")
+
+   #### Test challenge
+![alt text] (https://github.com/NovaXam/Adventures/blob/master/Planning/Mockups/Test_challenge.JPG "Test challenge")
+
+   #### Winner popup
+![alt text] (https://github.com/NovaXam/Adventures/blob/master/Planning/Mockups/Winner_popup.JPG "Winner popup")
+
+
+
+
+
+
+
+
