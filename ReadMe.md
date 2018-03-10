@@ -126,28 +126,28 @@ Winner get everything, loser will stuck in the game forever.
 ## Mockups
 
    #### Front page
-![alt text] (https://github.com/NovaXam/Adventures/blob/master/Planning/%20Mockups/Front_page.JPG "Front page")
+![alt text](https://github.com/NovaXam/Adventures/blob/master/Planning/%20Mockups/Front_page.JPG "Front page")
    
    #### Game page
-![alt text] (https://github.com/NovaXam/Adventures/blob/master/Planning/%20Mockups/Game_page.JPG "Game page")
+![alt text](https://github.com/NovaXam/Adventures/blob/master/Planning/%20Mockups/Game_page.JPG "Game page")
    
    #### Dark magic
-![alt text] (https://github.com/NovaXam/Adventures/blob/master/Planning/%20Mockups/Dark_magic.JPG "Dark magic")
+![alt text](https://github.com/NovaXam/Adventures/blob/master/Planning/%20Mockups/Dark_magic.JPG "Dark magic")
 
    #### White magic
-![alt text] (https://github.com/NovaXam/Adventures/blob/master/Planning/%20Mockups/Bright_magic.JPG "White magic")
+![alt text](https://github.com/NovaXam/Adventures/blob/master/Planning/%20Mockups/Bright_magic.JPG "White magic")
 
    #### Menu slide
-![alt text] (https://github.com/NovaXam/Adventures/blob/master/Planning/%20Mockups/Menu_slide.JPG "Menu slide")
+![alt text](https://github.com/NovaXam/Adventures/blob/master/Planning/%20Mockups/Menu_slide.JPG "Menu slide")
 
    #### Start popup
-![alt text] (https://github.com/NovaXam/Adventures/blob/master/Planning/%20Mockups/Start_popup.JPG "Start popup")
+![alt text](https://github.com/NovaXam/Adventures/blob/master/Planning/%20Mockups/Start_popup.JPG "Start popup")
 
    #### Test challenge
-![alt text] (https://github.com/NovaXam/Adventures/blob/master/Planning/%20Mockups/Test_challenge.JPG "Test challenge")
+![alt text](https://github.com/NovaXam/Adventures/blob/master/Planning/%20Mockups/Test_challenge.JPG "Test challenge")
 
    #### Winner popup
-![alt text] (https://github.com/NovaXam/Adventures/blob/master/Planning/%20Mockups/Winner_popup.JPG "Winner popup")
+![alt text](https://github.com/NovaXam/Adventures/blob/master/Planning/%20Mockups/Winner_popup.JPG "Winner popup")
 
 
 
