@@ -22,11 +22,11 @@ Winner get everything, loser will stuck in the game forever.
    1. Front page: 
         #### Section:
             - number of players section 
-            - option to choose the number of player from 1 to 5. 
-            - level of complexity 
-            - option to choose a complexity level from 0 to 2 
-            - topic of the game 
-            - option to choose between 3 different topics #### Play button 
+            - option to choose the number of player from 1 to 3. 
+            - option to choose a complexity level from 1 to 3 
+            - topic of the game / 3 different topic of challenge 
+            - option to choose between 3 different topics 
+        #### Play button 
             - interactive button 
         #### Instructions field:
             - text block
@@ -68,12 +68,9 @@ Winner get everything, loser will stuck in the game forever.
   ### Back-end: 
    1. Storage: / Class (Model) 
         #### Questions: / hashMap<String, ArrayList> 
-            - easy level 
-            - hashMap<String, boolean> 
-            - medium level 
-            - hashMap<String, boolean> 
-            - hard level 
-            - hashMap<String, boolean> 
+            - easy level / hashMap<String, boolean> 
+            - medium level / hashMap<String, boolean> 
+            - hard level / hashMap<String, boolean> 
         #### Hints / ArrayList<>()
         #### History: / hashMap<Integer, ArrayList> 
         ##### Game: ArrayList<>() 
