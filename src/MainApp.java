@@ -29,7 +29,7 @@ public class MainApp {
         PLAYGROUND = game.generatePlayground();
         PLAYCELLS = PLAYGROUND.createCell();
 
-        System.out.println(PLAYCELLS.size() + " " + PLAYCELLS.get(1).type);
+        System.out.println(PLAYCELLS.size() + " " + PLAYCELLS.get(1).getType());
         Controller controller = Controller.getController();
 
 //        String [] questionBlock = controller.generatorRandomQuest(LISTQUESTIONS.size(), LISTQUESTIONS);

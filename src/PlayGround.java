@@ -40,13 +40,13 @@ public class PlayGround {
         while(listOfCell.size() < 19) {
             if (!listOfCell.containsKey(ranNum)) {
                 if(listOfCell.size() < 3) {
-                    listOfCell.put(ranNum, new Cell_whiteMagic(ranNum, mapWhiteMagic[listOfCell.size()]));
+                    listOfCell.put(ranNum, new Cell_magic(ranNum, mapWhiteMagic[listOfCell.size()], "white"));
                     System.out.println(listOfCell.size());
                 } else if (3 <= listOfCell.size() && listOfCell.size() < 8) {
-                    listOfCell.put(ranNum, new Cell_blackMagic(ranNum, mapBlackMagic[listOfCell.size() - 3]));
+                    listOfCell.put(ranNum, new Cell_magic(ranNum, mapBlackMagic[listOfCell.size() - 3], "black"));
                     System.out.println(listOfCell.size());
                 } else if (8 <= listOfCell.size() && listOfCell.size() < 19) {
-                    listOfCell.put(ranNum, new Cell_regular(ranNum, mapQuestion.get(listOfCell.size() - 8)));
+                    listOfCell.put(ranNum, new Cell_regular(ranNum, mapQuestion.get(listOfCell.size() - 8), "regular"));
                     System.out.println(listOfCell.size());
                 };
             } else {
