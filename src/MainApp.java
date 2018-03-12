@@ -13,6 +13,8 @@ public class MainApp {
     private static ArrayList<Player> LISTPLAYERS;
     private static HashMap<Integer, String []> LISTQUESTIONS;
     private static Menu MENUINSTANCE;
+    private static PlayGround PLAYGROUND;
+    private static HashMap<Integer, Cell> PLAYCELLS;
 
     public static void main(String [] args) {
 
@@ -23,12 +25,14 @@ public class MainApp {
         //generating a game instance on base of initial params
         Game game = new Game(initGame.getGameLevel(), initGame.getGameTopic(), Integer.parseInt(initGame.getNumPlayers()));
         LISTPLAYERS = game.generatePlayers();
-        LISTQUESTIONS = game.generateQuest();
         MENUINSTANCE = game.generateMenu();
+        PLAYGROUND = game.generatePlayground();
+        PLAYCELLS = PLAYGROUND.createCell();
 
+        System.out.println(PLAYCELLS.size() + " " + PLAYCELLS.get(1).type);
         Controller controller = Controller.getController();
 
-        String [] questionBlock = controller.generatorRandomQuest(LISTQUESTIONS.size(), LISTQUESTIONS);
+//        String [] questionBlock = controller.generatorRandomQuest(LISTQUESTIONS.size(), LISTQUESTIONS);
         String hintBlock = controller.generatorRandomHints(MENUINSTANCE.hints.size(), MENUINSTANCE.hints);
         System.out.println(controller.rollDice());
     };

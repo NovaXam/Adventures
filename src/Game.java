@@ -7,7 +7,7 @@ public class Game {
     private static int NUM_PLAYERS;
     private static String TOPIC;
     private static String [] playerList = {"Plyaer1", "Player2", "Player3"};
-    private Storage storage = Storage.getStoraInstance();
+//    private Storage storage = Storage.getStoreInstance();
 
     public Game(String level, String topic, int numPlayers) {
         LEVEL = level;
@@ -24,11 +24,25 @@ public class Game {
         return list;
     };
 
-    public HashMap<Integer, String []> generateQuest() {
-        return storage.queryQuestions(Integer.parseInt(LEVEL), TOPIC);
-    };
+//    public HashMap<Integer, String []> generateQuest() {
+//        return storage.queryQuestions(Integer.parseInt(LEVEL), TOPIC);
+//    };
 
     public Menu generateMenu() {
-      return new Menu();
+        return new Menu();
     };
+
+    public PlayGround generatePlayground() {
+        PlayGround playGround = PlayGround.getPlayGround(19, LEVEL, TOPIC);
+        return playGround;
+    }
+
+//    public HashMap<Integer, Cell> getPlayGround() {
+//        this.intantiatePlayGround();
+//        return playGround.listOfCell;
+//    };
+//
+//    public HashMap<Integer, Cell> intantiatePlayGround() {
+//        return playGround.createCell();
+//    };
 };

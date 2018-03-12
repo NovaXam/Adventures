@@ -2,16 +2,15 @@ import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
 import javax.swing.text.rtf.RTFEditorKit;
 import java.io.*;
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class Storage {
     private static Storage MAINDATASTORE = null;
-    private static String [] LINKSTORE = {"Data/questions.rtf", "Data/instructions.rtf", "Data/Hints.rtf", "Data/Score.rtf"};
+    private static String [] LINKSTORE = {"Data/questions.rtf", "Data/instructions.rtf", "Data/Hints.rtf", "Data/Score.rtf", "Data/WhiteMagic.rtf", "Data/BlackMagic.rtf"};
     protected Storage() {
     };
 
-    public static Storage getStoraInstance() {
+    public static Storage getStoreInstance() {
         if(MAINDATASTORE == null) {
             MAINDATASTORE = new Storage();
             return MAINDATASTORE;
@@ -73,5 +72,17 @@ public class Storage {
 
     public String getScoreHistory() {
         return requestData(LINKSTORE[3]);
+    };
+
+    public String [] getWhiteMagic() {
+        String [] whiteMagicArr;
+        whiteMagicArr = requestData(LINKSTORE[4]).split("\n");
+        return whiteMagicArr;
+    };
+
+    public String [] getBlackMagic() {
+        String [] blackMagic;
+        blackMagic = requestData(LINKSTORE[5]).split("\n");
+        return blackMagic;
     };
 }
