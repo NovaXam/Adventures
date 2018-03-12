@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb8d0938-0a55-4c79-b142-8c1966c13ba6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Cell_blackMagic.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Cell_whiteMagic.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cell.java" afterPath="$PROJECT_DIR$/src/Cell.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cell_regular.java" afterPath="$PROJECT_DIR$/src/Cell_regular.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainApp.java" afterPath="$PROJECT_DIR$/src/MainApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PlayGround.java" afterPath="$PROJECT_DIR$/src/PlayGround.java" />
-    </list>
+    <list default="true" id="cb8d0938-0a55-4c79-b142-8c1966c13ba6" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
