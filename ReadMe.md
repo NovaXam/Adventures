@@ -146,7 +146,77 @@ Winner get everything, loser will stuck in the game forever.
    #### Winner popup
 ![alt text](https://github.com/NovaXam/Adventures/blob/master/Planning/%20Mockups/Winner_popup.JPG "Winner popup")
 
+## Code Snipet
 
+```
+//query database and arrange the result in appropriate format for the further use
+public HashMap<Integer, String []> queryQuestions(int level, String topic) {
+        HashMap<Integer, String []> list = new HashMap<>();
+        String [] arr, temp;
+        int elem = 1;
+        arr = requestData(LINKSTORE[0]).split(";");
+        for (int i = 0; i < arr.length - 1; i++) {
+            temp = arr[i].split(",");
+            int var = Integer.parseInt(temp[2].trim());
+            if (var == level && (temp[3].trim()).equals(topic)) {
+                String [] questAndAnswer =  {temp[1], temp[0]};
+                list.put(elem, questAndAnswer);
+                elem++;
+                }
+            };
+        return list;
+    };
+
+public String requestData(String address) {
+        String template = "";
+        try {
+            FileInputStream stream = new FileInputStream(address);
+            RTFEditorKit kit = new RTFEditorKit();
+            Document doc = kit.createDefaultDocument();
+            kit.read(stream, doc, 0);
+            template = doc.getText(0, doc.getLength());
+        } catch (BadLocationException bl) {
+            bl.getMessage();
+        } catch (FileNotFoundException nf) {
+            nf.getMessage();
+        } catch (IOException io) {
+            io.getMessage();
+        }
+        return template;
+    };
+
+
+//mathod to create playground of the game
+public HashMap<Integer, Cell> createCell() {
+        int ranNum;
+        System.out.println(this.level + " " + this.topic);
+        HashMap<Integer, String []> mapQuestion = storage.queryQuestions(Integer.parseInt(this.level), this.topic);
+        String [] mapBlackMagic = storage.getBlackMagic();
+        String [] mapWhiteMagic = storage.getWhiteMagic();
+        System.out.println(mapQuestion.size() + " " + mapBlackMagic.length + " " + mapWhiteMagic.length);
+
+        ranNum = (int) Math.ceil(Math.random() * 19);
+        while(listOfCell.size() < 19) {
+            if (!listOfCell.containsKey(ranNum)) {
+                if(listOfCell.size() < 3) {
+                    listOfCell.put(ranNum, new Cell_magic(ranNum, mapWhiteMagic[listOfCell.size()], "white"));
+                    System.out.println(listOfCell.size());
+                } else if (3 <= listOfCell.size() && listOfCell.size() < 8) {
+                    listOfCell.put(ranNum, new Cell_magic(ranNum, mapBlackMagic[listOfCell.size() - 3], "black"));
+                    System.out.println(listOfCell.size());
+                } else if (8 <= listOfCell.size() && listOfCell.size() < 19) {
+                    listOfCell.put(ranNum, new Cell_regular(ranNum, mapQuestion.get(listOfCell.size() - 8), "regular"));
+                    System.out.println(listOfCell.size());
+                };
+            } else {
+                ranNum = (int) Math.ceil(Math.random() * 19);
+            };
+        };
+        return listOfCell;
+    };
+
+
+```
 
 
 
